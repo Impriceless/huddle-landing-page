@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    min-height: 100vh;
+    padding: 5rem 7rem;
+    background: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav__logo {
+    width: 22rem;
+}
+nav {
+    margin-bottom: 5.5rem;
+}
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.image-section {
+    margin-right: 5rem;
+}
+.text-section {
+    padding-right: 5rem;
+    padding-top: 7rem;
+}
+.text__heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.text__paragraph {
+    font-size: 1.7rem;
+}
+.button {
+    margin-top: 2rem;
+    padding: 1.5rem 6rem;
+    background: white;
+    color: hsl(300, 69%, 71%);
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    font-size: inherit;
+    font-family: Poppins, sans-serif;
+    box-shadow: .3rem .5rem .5rem rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+    cursor: pointer;
+    letter-spacing: .5px;
+}
+.button:hover {
+    color: white;
+    background: hsl(300, 69%, 71%);
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5rem;
+}
+.social__icons {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all .2s;
+}
+.social__icons:not(:last-child) {
+    margin-right: 2rem;
+}
+.social__icons:hover {
+    color: hsl(300, 69%, 65%);
+    border: 1px solid currentColor;
+}
+@media only screen and (max-width: 1400px) {
+    html {
+        font-size: 58%;
+    }
+    .image {
+        width: 55rem;
+    }
+    .text-section {
+        padding-right: 3rem;
+        padding-top: 4rem;
+    }
+    .social {
+        padding-right: 3rem;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+    body {
+        padding: 4rem;
+        line-height: 1.9;
+    }
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-section {
+        padding-right: 0;
+        padding-top: 0;
+    }
+    .social {
+        justify-content: center;
+        padding-right: 0rem;
+        margin-top: 2rem;
+    }
+    .image-section {
+        margin-right: 0rem;
+        margin-bottom: 5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .image {
+        width: 50rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background: url(images/bg-mobile.svg) no-repeat center;
+        background-color:  hsl(257, 40%, 49%);
+    }
+    .image {
+        width: 40rem;
+    }
+}
